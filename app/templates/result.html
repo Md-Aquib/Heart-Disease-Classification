@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<script type="text/javascript" src="jquery-3.5.1.min.js">
+
+<!-- Result -->
+<div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Result</h1>
+        </div>
+        <div class="modal-body">
+            {{result}}
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-dark" href="/">Close</a>
+        </div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}

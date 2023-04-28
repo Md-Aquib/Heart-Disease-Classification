@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #E74646;
+}
+
+.navbar{
+    background:#fff;
+}
+
+.navbar-brand{
+    font-family: 'Roboto';
+}
+
+.navbar-brand #logo{
+    margin-top:-5px;
+}
+
+.card{
+    margin-top:80px;
+    border: none;
+    border-radius:20px;
+    width:75%;
+}
+
+.card-title{
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.card-body{
+    margin-top:5px;
+}
+
+.wrapper h6::after {
+    content: "*";
+    color: red;
+}
+
+.input-field{
+    margin-top:20px;
+}
+
+.card-body p {
+    margin-top:30px;
+}
+
+.uid{
+    margin-top:50px;
+}
+
+
+@media (max-width:767px){
+    .card{
+        width:90%;
+    }
+
+    #first-name{
+        margin-top:20px;
+    }
+}

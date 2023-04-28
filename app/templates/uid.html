@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="col d-flex justify-content-center">
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card-title"><h3>Welcome !</h3></div>
+        <div class="card-body">
+            <form action="/" method="post">
+                {%csrf_token%}
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <img src="{% static 'images/icon.png' %}" alt="Logo" height="300" width="300">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 wrapper uid">
+                        <h6>Patient UID </h6>
+                        <input class="form-control" name="uid" required type="text">
+                        <small class="form-text text-muted">If the patient is not registered. Register him by logging in with Admin. </small>
+                    </div>
+                </div>
+                <p style="text-align: center;">
+                    <button class="btn btn-lg btn-danger" type="submit">Submit</button>
+                </p>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
